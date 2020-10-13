@@ -61,7 +61,6 @@ const getTeamUpcomingMatches = async (teamId) => {
 export const getTeamExtraInfoFromAPi = async (teamId) => {
     const teamPlayers = await getTeamPlayers(teamId);
     const teamMatches = await getTeamUpcomingMatches(teamId);
-
     return {
         players: teamPlayers,
         matches: teamMatches
